@@ -24,11 +24,6 @@ let icono = [
   "<h2>&#9830</h2>"
 ];
 
-window.onload = function() {
-  console.log("Se supone que esto debería aparecer en consola");
-  console.log("esto también debería aparecer en consola " + numero[2]);
-};
-
 function recarga() {
   let num = Math.floor(Math.random() * 12);
   let num2 = Math.floor(Math.random() * 4);
@@ -36,6 +31,14 @@ function recarga() {
   document.getElementById("number").innerHTML = numero[num];
   document.getElementById("icon").innerHTML = icono[num2];
   document.getElementById("icon2").innerHTML = icono[num2];
+
+  if (num2 == 2 || num2 == 3) {
+    let num3 = Math.floor(Math.random() * 2);
+    if (num3 == 0) {
+      document.getElementById("icon").style.color = "red";
+      document.getElementById("icon2").style.color = "red";
+    }
+  }
 }
 
 recarga();
