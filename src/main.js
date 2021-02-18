@@ -37,6 +37,7 @@ function recarga() {
     if (num3 == 0) {
       document.getElementById("icon").style.color = "red";
       document.getElementById("icon2").style.color = "red";
+      document.getElementById("number").style.color = "red";
     }
   }
 }
