@@ -25,7 +25,7 @@ let icono = [
 ];
 
 function recarga() {
-  let num = Math.floor(Math.random() * 12);
+  let num = Math.floor(Math.random() * 13);
   let num2 = Math.floor(Math.random() * 4);
 
   document.getElementById("number").innerHTML = numero[num];
